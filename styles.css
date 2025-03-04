@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+div {
+    padding: 10px;
+    background-color: #a18262;
+}
+
+img {
+    width: 20%;
+    height: auto;
+    box-shadow: #f0f0f0;
+}
+
+h1 {
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    margin: 20px 0;
+    text-align: center;
+    text-shadow: #ffffff 0px 0px 20px;
+}
+
+section h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5em;
+    color: rgb(0, 0, 255);
+    margin: 10px 0;
+}
+
+footer p {
+    font-size: 0.8em;
+    color: rgb(0, 0, 0);
+    margin: 5px 0;
+    text-align: center;
+    padding: 5px;
+    background-color: #a18262;
+}
