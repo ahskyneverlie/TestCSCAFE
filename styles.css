@@ -38,4 +38,7 @@ footer p {
     text-align: center;
     padding: 5px;
     background-color: #a18262;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
