@@ -1,12 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    min-height: 100%;
-    background-color: #f0f0f0;
-}
-
 div {
     padding: 0px;
     background-color: #a18262;
@@ -19,27 +10,73 @@ img {
 
 h1 {
     font-size: 1em;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 189, 94);
     margin: 20px 0;
-    text-align: center;
-    text-shadow: #ffffff 0px 0px 20px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid orange;
+    animation: typing 0.5 steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-section h1 {
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+section h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 5em;
-    color: rgb(0, 0, 255);
-    margin: 10px 0;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    margin: 30px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    animation: fadeIn 5s ease-in-out;
 }
 
-footer p {
-    font-size: 0.8em;
-    color: rgb(0, 0, 0);
-    margin: 5px 0;
-    text-align: center;
-    padding: 5px;
-    background-color: #a18262;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #000;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.neon-text {
+    font-weight: bold;
+    text-align: right;
+    font-size: 0.5;
+    color: #fff;
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
 }
